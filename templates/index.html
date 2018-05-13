@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belly Button Biodiversity</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/appStyle.css') }}">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" style="text-align: center">
+            <h1>Belly Button Biodiversity</h1>
+            <h1>Dashboard</h1>
+            <p>Use the charts below to explore the dataset</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Select Sample:</h2>
+                <select id="selDataset" onchange="getData(this.value)">
+                    <!-- <option value="dataset1">United States</option>
+                    <option value="dataset2">UK</option>
+                    <option value="dataset3">Canada</option> -->
+                </select>
+                <!-- <form id="myForm">
+                    <select id="selectNumber">
+                      <option>Choose a number</option>
+                    </select>
+                </form> -->
+                    <!-- <script src="lib/script.js"></script> -->
+                <div id="pie"></div>
+                <!-- <script src="plots.js"></script> -->
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-md-12">
+                <h2><a href="/send">The Send Route</a></h2>
+            </div>
+        </div> -->
+    </div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/jsApp.js') }}"></script>
+
+</body>
+
+</html>
