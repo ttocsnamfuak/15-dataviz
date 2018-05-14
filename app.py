@@ -153,7 +153,7 @@ def sample(sample):
 #     return jsonify(all_pets)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
 # @app.route("/otu")
 # def home():
