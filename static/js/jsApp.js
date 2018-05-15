@@ -52,8 +52,8 @@ function init(data) {
           }]; 
           console.log(data);
           var layout = {
-            height: 300,
-            width: 400
+            height: 600,
+            width: 800
           };
           var PIE = document.getElementById("pie");
           Plotly.plot(PIE, data, layout);
